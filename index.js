@@ -25,6 +25,7 @@ const float1 = 55.1;
 
 //1-9 Organizing Data with Arrays
 //Array
+// []를 사용
 const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 console.log(daysOfWeek);
 console.log(daysOfWeek[2]);
@@ -37,3 +38,25 @@ const fri = "Fri";
 console.log(mon, tue, wed, thu, fri);
 
 //Object
+// {}를 사용
+const kimInfo = {
+  name: "Kim",
+  age: 33,
+  gender: "Male",
+  isHandsome: true,
+  favMovies: ["Along the gods", "LOTR", "Oldboy"],
+  favFood: [
+    { name: "Kimchi", fattay: false },
+    { name: "Cheese burger", fattay: true },
+  ],
+};
+
+console.log(kimInfo);
+console.log(kimInfo.gender);
+
+kimInfo.gender = "Female";
+console.log(kimInfo.gender);
+
+console.log(kimInfo.favFood);
+console.log(kimInfo.favFood[0]);
+console.log(kimInfo.favFood[0].fattay);
