@@ -8,3 +8,17 @@ console.log(b, a);
 // 1. Create
 // 2. Initialize
 // 3. Use
+
+//변수를 선언할 때는 기본적으로 const
+//String
+const what = "Kim";
+console.log(what);
+
+//boolean 소문자 true, false
+const wat = true;
+
+//Number
+const num = 777;
+
+// Float
+const float1 = 55.1;
