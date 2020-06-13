@@ -22,3 +22,18 @@ const num = 777;
 
 // Float
 const float1 = 55.1;
+
+//1-9 Organizing Data with Arrays
+//Array
+const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+console.log(daysOfWeek);
+console.log(daysOfWeek[2]);
+
+const mon = "Mon";
+const tue = "Tue";
+const wed = "Wed";
+const thu = "Thu";
+const fri = "Fri";
+console.log(mon, tue, wed, thu, fri);
+
+//Object
