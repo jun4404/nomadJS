@@ -60,3 +60,20 @@ console.log(kimInfo.gender);
 console.log(kimInfo.favFood);
 console.log(kimInfo.favFood[0]);
 console.log(kimInfo.favFood[0].fattay);
+
+//2-1 your first JS Function
+//console = object, log = function
+console.log(kimInfo, console);
+
+console.log("Grettings Kim");
+console.log("Hello Jun");
+console.log("Hello Liyn");
+console.log("Hello Dal");
+
+function sayHello(potato, age) {
+  //console.log(args1, args2)
+  console.log("Hello!", potato, " you have ", age);
+}
+
+sayHello("Kim", 15);
+console.log("Hi!");
