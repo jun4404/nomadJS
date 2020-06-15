@@ -77,3 +77,25 @@ function sayHello(potato, age) {
 
 sayHello("Kim", 15);
 console.log("Hi!");
+
+//#2.1.1 More Function Fun
+// JS에서는 ''도 스트링, ""도 스트링
+// `(백틱)
+function sayHello2(potato, age) {
+  //console.log(args1, args2)
+  return `Hello ${name} you are ${age} years old`;
+}
+
+const greetKim = sayHello2("Kim", 15);
+console.log(greetKim);
+console.log("Hi!");
+
+const calculator = {
+  plus: function (a, b) {
+    return a + b;
+  },
+};
+
+console.log();
+const plus = calculator.plus(5, 5);
+console.log(plus);
