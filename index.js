@@ -166,12 +166,6 @@ function handleClick() {
   }
 }
 
-function init() {
-  title.style.color = BASE_COLOR;
-  title.addEventListener("click", handleClick);
-}
-init();
-
 function handleOffline() {
   console.log("offline");
 }
@@ -181,3 +175,22 @@ function handleOnline() {
 }
 window.addEventListener("offline", handleOffline);
 window.addEventListener("online", handleOnline);
+
+//#2.7 DOM - If else - Function practice Two
+const CLICKED_CLASS = "clicked";
+// classList 사용
+function handleClick2() {
+  title.classList.toggle(CLICKED_CLASS);
+
+  //위의 것과 같은 기능
+  // const hasClass = title.classList.contains(CLICKED_CLASS);
+  // if (!hasClass) {
+  //   title.classList.add(CLICKED_CLASS);
+  // } else {
+  //   title.classList.remove(CLICKED_CLASS);
+  // }
+}
+function init() {
+  title.addEventListener("click", handleClick2);
+}
+init();
