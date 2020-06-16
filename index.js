@@ -99,3 +99,10 @@ const calculator = {
 console.log();
 const plus = calculator.plus(5, 5);
 console.log(plus);
+
+//#2.2 JS DOM Functions
+const title = document.getElementById("title");
+console.log(title);
+
+// Document Object Module
+title.innerHTML = "Hi! From JS";
