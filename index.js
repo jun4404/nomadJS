@@ -115,3 +115,19 @@ const title1 = document.querySelector("#title");
 title.innerHTML = "1112345";
 title.style.color = "blue";
 document.title = "2939312";
+
+//#2.4 Events and event handlers
+//JS는 이벤트에 대응하기 위해 만들어졌다.
+
+function handleResize(event) {
+  console.log(event);
+  console.log("I have been resized");
+}
+
+window.addEventListener("resize", handleResize);
+
+function handleClick() {
+  title.style.color = "red";
+}
+
+window.addEventListener("click", handleClick);
