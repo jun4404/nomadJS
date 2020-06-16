@@ -126,8 +126,58 @@ function handleResize(event) {
 
 window.addEventListener("resize", handleResize);
 
-function handleClick() {
-  title.style.color = "red";
+window.addEventListener("click", handleClick);
+
+//#2.5 If, else, and, or
+if ("10" === 10) {
+  console.log("hi");
+} else if ("10" === "10") {
+  console.log("hohoho");
+} else {
+  console.log("ho");
 }
 
-window.addEventListener("click", handleClick);
+if (20 > 5 && "kim" === "kim") {
+  console.log("yes");
+} else {
+  console.log("no");
+}
+
+// const age = prompt("How old are you");
+// if (age >= 18 && age < 21) {
+//   console.log("you can drink but you should not");
+// } else if (age > 21) {
+//   console.log("go ahead");
+// } else {
+//   console.log("you cant");
+// }
+//console.log(age);
+
+//#2.6 DOM - If else - Function practice
+const BASE_COLOR = "rgb(52, 73, 94)";
+const OTHER_COLOR = "blue";
+
+function handleClick() {
+  const currentColor = title.style.color;
+  if (currentColor === BASE_COLOR) {
+    title.style.color = OTHER_COLOR;
+  } else {
+    title.style.color = BASE_COLOR;
+  }
+}
+
+function init() {
+  title.style.color = BASE_COLOR;
+  title.addEventListener("click", handleClick);
+}
+init();
+
+function handleOffline() {
+  console.log("offline");
+}
+
+function handleOnline() {
+  console.log("online, welcome back");
+}
+window.addEventListener("offline", handleOffline);
+window.addEventListener("online", handleOnline);
