@@ -106,3 +106,12 @@ console.log(title);
 
 // Document Object Module
 title.innerHTML = "Hi! From JS";
+
+//#2.3 Modifying the DOM with JS
+console.dir(title);
+title.style.color = "red";
+document.title = "im";
+const title1 = document.querySelector("#title");
+title.innerHTML = "1112345";
+title.style.color = "blue";
+document.title = "2939312";
